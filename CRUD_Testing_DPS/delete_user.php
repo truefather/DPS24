@@ -9,7 +9,7 @@ $sql="DELETE FROM usuarios WHERE id_usuario='$id'";
 $query = mysqli_query($con, $sql);
 
 if($query){
-    Header("Location: index.php");
+    Header("Location: indexo.php");
 }else{
 
 }
