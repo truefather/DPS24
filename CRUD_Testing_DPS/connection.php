@@ -1,11 +1,11 @@
 <?php
 
 function connection(){
-    $host = "localhost";
+    $host = "USUARIO FINAL";
     $user = "root";
     $pass = "";
 
-    $bd = "usuarios";
+    $bd = "usuaries";
 
     $connect=mysqli_connect($host, $user, $pass);
 
