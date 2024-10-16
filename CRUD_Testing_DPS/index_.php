@@ -48,7 +48,7 @@ $query = mysqli_query($con, $sql);
                     <tr>
                         <th><?= $row['id_producto'] ?></th>
                         <th><?= $row['nombre'] ?></th>
-                        <th><?= $row['marca'] ?></th>
+                        <th><?= $row['marcados'] ?></th>
                         <th><?= $row['precio'] ?></th>
                         <th><a href="update.php?id=<?= $row['id_usuario'] ?>" class="users-table--edit">Editar</a></th>
                         <th><a href="delete_user.php?id=<?= $row['id_usuario'] ?>" class="users-table--delete" >Eliminar</a></th>
