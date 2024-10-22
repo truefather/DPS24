@@ -1,5 +1,5 @@
 <?php
-// hola cleto rojo
+
 include("connection.php");
 $con = connection();
 
