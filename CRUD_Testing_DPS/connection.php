@@ -4,6 +4,7 @@ function connection(){
     $host = "USUARIO FINAL";
     $user = "root";
     $pass = "";
+    $bd = "users";
 
     $bd = "usuarios";
 
