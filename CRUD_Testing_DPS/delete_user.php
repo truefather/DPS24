@@ -1,17 +1,19 @@
 <?php
 
-include("connection.php");
-$con = connection();
+include("conectarBaseDatos.php");
+$conexion = conectarBaseDatos();
 
-$id=$_GET["id"];
+$clienteId = $_GET["clienteId"];
 
-$sql="DELETE FROM usuarios WHERE id_usuario='$id'";
-$query = mysqli_query($con, $sql);
+$consulta = "DELETE FROM clientes WHERE cliente_id='$clienteId'";
+$resultado = mysqli_query($conexion, $consulta);
 
-if($query){
-    Header("Location: indexo.php");
+if($resultado){
+    Header("Location: inicio.php");
 }else{
 
-}ESTOS SON MIS CAMBIOS
+}
+
+// ESTOS SON MIS CAMBIOS FLORENCSIO 
 
 ?>
