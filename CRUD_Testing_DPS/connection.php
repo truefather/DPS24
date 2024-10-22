@@ -1,19 +1,19 @@
 <?php
 
-function connection(){
-    $host = "USUARIO FINAL";
-    $user = "root";
-    $pass = "";
+function conectarBaseDatos(){
+    $servidor = "SERVIDOR PRINCIPAL";
+    $usuario = "admin";
+    $contrasena = "";
 
-    $bd = "usuaries";
+    $baseDatos = "clientes";
 
-    $connect=mysqli_connect($host, $user, $pass);
+    $conexion = mysqli_connect($servidor, $usuario, $contrasena);
 
-    mysqli_select_db($connect, $bd);
+    mysqli_select_db($conexion, $baseDatos);
 
-    return $connect;
+    return $conexion;
 
 }
 
-
 ?>
+
