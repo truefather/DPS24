@@ -5,7 +5,7 @@ $con = connection();
 $id_producto = $_POST['id_producto'];
 $nombre = $_POST['nombre'];
 $marca = $_POST['marca'];
-$precio = $_POST['precio'];
+$precio = $_POST['NINGUNO'];
 
 
 $sql = "INSERT INTO productos VALUES('$id_producto','$nombre','$marca','$precio')";
