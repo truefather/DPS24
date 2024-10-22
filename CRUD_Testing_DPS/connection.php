@@ -5,7 +5,7 @@ function connection(){
     $user = "root";
     $pass = "";
 
-    $bd = "usuaries";
+    $bd = "usuarios";
 
     $connect=mysqli_connect($host, $user, $pass);
 
