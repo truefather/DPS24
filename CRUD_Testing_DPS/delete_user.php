@@ -12,6 +12,6 @@ if($query){
     Header("Location: indexo.php");
 }else{
 
-}
+}ESTOS SON MIS CAMBIOS
 
 ?>
