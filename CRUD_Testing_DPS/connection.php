@@ -1,24 +1,23 @@
-<?php
+function connection() {
+    $host = "localhost"; 
+    $user = "root"; 
+    $pass = ""; 
+    $bd = "usuaries"; 
 
-function connection(){
-    $host = "Localhost";
-    $user = "root";
-    $pass = "";
+    
+    $connect = mysqli_connect($host, $user, $pass, $bd);
 
-    $bd = "usuarios";
-
-    $connect=mysqli_connect($host, $user, $pass);
+    
     if (!$connect) {
-        die("Error de conexión: " . mysqli_connect_error());
+        die("Conexión fallida: " . mysqli_connect_error());
     }
 
-    mysqli_select_db($connect, $bd);
-if (!mysqli_select_db($connect, $bd)) {
-        die("Error al seleccionar la base de datos: " . mysqli_error($connect));
-    }
     return $connect;
-
 }
 
+
+$conexion = connection();
+
+mysqli_close($conexion);
 ?>
 
