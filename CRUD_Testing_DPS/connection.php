@@ -1,7 +1,7 @@
 <?php
 
 function connection(){
-    $host = "Localhost";
+    $host = "localhost";
     $user = "root";
     $pass = "";
 
