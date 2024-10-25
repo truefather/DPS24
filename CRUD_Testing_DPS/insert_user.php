@@ -2,7 +2,7 @@
 include("connection.php");
 $con = connection();
 
-$id_producto = $_POST['id_producto'];
+$id_producto = $_POST['id_tester'];
 $nombre = $_POST['nombre'];
 $marca = $_POST['marca'];
 $precio = $_POST['precio'];
