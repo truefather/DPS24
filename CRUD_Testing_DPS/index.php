@@ -2,7 +2,7 @@
 include("connection.php");
 $con = connection();
 
-$sql = "SELECT * FROM tester";
+$sql = "SELECT * FROM testers";
 $query = mysqli_query($con, $sql);
 ?>
 
@@ -29,6 +29,14 @@ $query = mysqli_query($con, $sql);
 
 
 <body>
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 56px; /* Ajusta este valor según la altura de tu navbar */
+        }
+    </style>
+    
     <div class="users-form">
         <h1>Crear Tester</h1>
         <form action="insert_user.php" method="POST">
