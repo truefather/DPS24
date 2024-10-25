@@ -22,7 +22,7 @@
     <body>
         <div class="users-form">
             <form action="edit_user.php" method="POST">
-                <input type="hidden" name="id tester" value="<?= $row['id_tester']?>">
+                <input type="hidden" name="id_tester" value="<?= $row['id_tester']?>">
                 <input type="text" name="apellido" placeholder="apellido" value="<?= $row['apellido']?>">
                 <input type="text" name="nombre" placeholder="nombre" value="<?= $row['nombre']?>">
                 <input type="text" name="edad" placeholder="edad" value="<?= $row['edad']?>">
