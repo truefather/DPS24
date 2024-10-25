@@ -1,26 +1,22 @@
 <?php
-<<?php
 include("connection.php");
-nclude("connection.php");
 $con = connection();
 
-$id_producto = $_POST['id_producto'];
-$id_producto = $_POST['id_tester'];
-$id= $_POST['id_tester'];
+// Obtener los datos del formulario
+$id_tester = $_POST['id_tester'];
 $nombre = $_POST['nombre'];
-$marca = $_POST['marca'];
-$precio = $_POST['precio'];
+$apellido = $_POST['apellido'];
+$edad = $_POST['edad'];
 
-
-$sql = "INSERT INTO tester VALUES('$id_tester','$nombre','$apellido','$edad')";
-$sql = "INSERT INTO tester VALUES('$id_tester','$nombre','$apellido','$edad')";
-$sql = "INSERT INTO tester VALUES('$id_tester','$nombre','$apellido','$edad')";
-$sql = "INSERT INTO testers VALUES('$id_tester','$nombre','$apellido','$edad')";
+// Crear la consulta SQL para insertar datos en la tabla 'testers'
+$sql = "INSERT INTO testers (id_tester, nombre, apellido, edad) VALUES ('$id_tester', '$nombre', '$apellido', '$edad')";
 $query = mysqli_query($con, $sql);
 
-if($query){
-    Header("Location: index.php");
-}else{
-@@ -17,4 +17,4 @@
-
+// Redirigir si la consulta fue exitosa o mostrar un mensaje de error
+if ($query) {
+    header("Location: index.php");
+} else {
+    echo "Error en la inserción: " . mysqli_error($con);
 }
+?>
+
