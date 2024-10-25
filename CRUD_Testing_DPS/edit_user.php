@@ -2,13 +2,13 @@
 include("connection.php");
 $con = connection();
 
-$id_producto = $_POST['id_producto'];
-$marca = $_POST['marca'];
+$id = $_POST['id_tester'];
+$apellido = $_POST['apellido'];
 $nombre = $_POST['nombre'];
-$precio = $_POST['precio'];
+$edad = $_POST['edad'];
 
 
-$sql="UPDATE productos SET id_producto='$id', marca='$marca', nombre='$nombre', precio='$precio' WHERE id_producto=$id";
+$sql="UPDATE testers SET id_tester='$id', nombre='$nombre', apellido='$apellido', edad='$edad' WHERE id_tester=$id";
 $query = mysqli_query($con, $sql);
 
 if($query){
