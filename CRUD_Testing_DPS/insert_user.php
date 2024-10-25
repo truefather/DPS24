@@ -1,15 +1,13 @@
 <?php
 <<?php
 include("connection.php");
-nclude("connection.php");
 $con = connection();
 
-$id_producto = $_POST['id_producto'];
 $id_producto = $_POST['id_tester'];
 $id= $_POST['id_tester'];
 $nombre = $_POST['nombre'];
-$marca = $_POST['marca'];
-$precio = $_POST['precio'];
+$apellido = $_POST['apellido'];
+$edad = $_POST['edad'];
 
 
 $sql = "INSERT INTO tester VALUES('$id_tester','$nombre','$apellido','$edad')";
