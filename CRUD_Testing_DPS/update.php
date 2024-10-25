@@ -4,7 +4,7 @@
 
     $id=$_GET['id'];
 
-    $sql="SELECT * FROM productos WHERE id_producto='$id'";
+    $sql="SELECT * FROM testers WHERE id_tester='$id'";
     $query=mysqli_query($con, $sql);
 
     $row=mysqli_fetch_array($query);
@@ -22,10 +22,10 @@
     <body>
         <div class="users-form">
             <form action="edit_user.php" method="POST">
-                <input type="hidden" name="id del producto" value="<?= $row['id_producto']?>">
-                <input type="text" name="marca" placeholder="marca" value="<?= $row['marca']?>">
+                <input type="hidden" name="id tester" value="<?= $row['id_tester']?>">
+                <input type="text" name="apellido" placeholder="apellido" value="<?= $row['apellido']?>">
                 <input type="text" name="nombre" placeholder="nombre" value="<?= $row['nombre']?>">
-                <input type="text" name="precio" placeholder="precio" value="<?= $row['precio']?>">
+                <input type="text" name="edad" placeholder="edad" value="<?= $row['edad']?>">
                 <input type="submit" value="Actualizar">
             </form>
         </div>
