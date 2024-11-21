@@ -8,7 +8,17 @@ $query = mysqli_query($con, $sql);
 
 <!DOCTYPE html>
 <html lang="en">
+//<?php
+include("conectarBaseDatos.php");
+$conexion = conectarBaseDatos();
 
+$consulta = "SELECT * FROM pruebas";
+$resultado = mysqli_query($conexion, $consulta);
+?>
+
+<!DOCTYPE html>
+<html lang="es">
+ESTOS SON MIS CAMBIOS DE MISTER FLORENSIO 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
